@@ -1,0 +1,191 @@
+body {
+    padding: 100px !important;
+    background-color: #F8F9FD !important;
+}
+
+.card {
+    width: 500px;
+    height: 600px;
+    font-family: monospace;
+    border-radius: 5%;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 3px 3px #ccc;
+    -webkit-box-shadow: 3px 3px 3px 3px #ccc;
+    -moz-box-shadow: 3px 3px 3px 3px #ccc;
+}
+
+.card-header {
+    width: 90%;
+    position: relative;
+    top: -40%;
+    background-color: #EE3A39;
+    padding: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5%;
+}
+
+.card-logo {
+    width: 100%;
+    transition-duration: 1000ms !important;
+    transition: all;
+}
+
+.card-logo::before {
+    content: "";
+    padding-top: 100%;
+}
+
+.card-short-name {
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card-short-state {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-short-description {
+    color: #686F77;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    text-align: center;
+    top: -33%;
+}
+
+.card:hover .card-logo {
+    width: 0%;
+}
+
+.card:hover .card-short-description {
+    display: none;
+}
+
+.card-discount-num {
+    background-color: #EE3A39;
+    color: #FFFFFF;
+    border-radius: 20%;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    transition: all;
+    transition-duration: 1000ms;
+}
+
+.card-discount {
+    direction: rtl;
+    position: relative;
+    left: 2%;
+    top: 65%;
+}
+
+.card-description {
+    position: relative;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+    color: #585F67;
+}
+
+.card-person {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35%;
+    color: #63AD7C;
+    text-align: center;
+    font-size: 40px;
+}
+
+.card-final {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.card-marks {
+    padding: 10%;
+}
+
+.card-cart-money {
+    width: 382.5px;
+    float: right;
+    background-color: #2ABB60;
+    border-top-right-radius: 20%;
+    -webkit-border-top-right-radius: 20%;
+    -moz-border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    -webkit-border-bottom-right-radius: 20%;
+    -moz-border-bottom-right-radius: 20%;
+}
+
+.card-cart-basket {
+    width: 67.5px;
+    background-color: #26A755;
+    display: table-cell;
+    vertical-align: middle;
+    border-top-left-radius: 10%;
+    -webkit-border-top-left-radius: 10%;
+    -moz-border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    -webkit-border-bottom-left-radius: 10%;
+    -moz-border-bottom-left-radius: 10%;
+}
+
+.card-cart-final {
+    font-size: 26px !important;
+    text-align: center;
+    height: 60px !important;
+}
+
+.card-cart {
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+.card-cart-money-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card-discount-money {
+    opacity: 0;
+    background-color: #EE3A39;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    transition: all;
+    transition-duration: 1000ms !important;
+}
+
+.card:hover .card-discount-money {
+    display: inline;
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #C8CFD7;
+    margin-right: -10px;
+    opacity: 1;
+}
+
+.card:hover .card-discount-num {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
